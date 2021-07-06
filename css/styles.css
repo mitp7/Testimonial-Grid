@@ -152,5 +152,17 @@
         "long-white";
         grid-gap: 1.5rem;
     }
+
+    .wide-info h2 {
+        margin: 0% 55% 0 0;
+    }
+
+    .small-info h2 {
+        margin: 0% 55% 0 0;
+    }
+
+    .small-grey h2 {
+        margin: 0% 50% 0 0;
+    }
 }
 
