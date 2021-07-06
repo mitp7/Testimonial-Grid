@@ -40,7 +40,7 @@ Users should be able to:
 
 From this challenge I learned more about CSS Grid and the various properties it has such as grid template columns, rows, and areas. Using these grid properties resulted in all of the components being very responsive further reducing the amount of time spend working with the media queries.
 
-Sample of the CSS Grid code used for both desktpp and mobile:
+Sample of the CSS Grid code used for both desktop and mobile:
 
 ```css
 .testimonial {
