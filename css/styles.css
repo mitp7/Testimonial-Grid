@@ -1,44 +1,156 @@
-body {
+* {
     margin: 0;
     background-color: hsl(210, 46%, 95%);
 }
 
+:root {
+    --border-radius: 8px;
+}
+
 .testimonial {
     display: grid;
-    padding: 9%;
+    margin: 5em;
     height: 100vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows:  1fr 1fr;
+    grid-template-columns: repeat(4, 1.5fr);
+    grid-template-rows:  repeat(2, 1fr);
     grid-template-areas: 
     "wide-purple wide-purple small-grey long-white"
     "small-white wide-black wide-black long-white";
-    grid-gap: 20px;
-    border: 5px solid red;
+    grid-gap: 1.8rem;
 }
 
 .wide-purple {
+    position: relative;
     background-color: hsl(263, 55%, 52%);
     grid-area: wide-purple;
+    border-radius: var(--border-radius);
+    padding: 4%;
+}
+.wide-black {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: wide-black;
+    border-radius: var(--border-radius);
+    padding: 4%;
+}
+
+/* Typography for both wide black and purple cards */
+.wide-info h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    margin-top: 4%;
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.wide-info h2 {
+    float: right;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background-color: transparent;
+    color: white;
+    margin: 0% 73% 0 0;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+.wide-info p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: hsl(0, 0%, 81%); 
+    margin-top: 13px;
+    background-color: transparent; 
+    font-size: 13px; 
+    line-height: 20px;
+    opacity: 70%;
+}
+
+
+.long-white {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: long-white;
+    border-radius: var(--border-radius);
+    padding: 8%;
+}
+.small-white {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: small-white;
+    border-radius: var(--border-radius);
+    padding: 8%;
+}
+
+/* Typography for the smaller/thinner cards */
+.small-info h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: hsl(219, 29%, 14%);
+    margin-top: 10%;
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+} 
+.small-info h2 {
+    float: right;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    background-color: transparent;
+    color: hsl(219, 29%, 14%);
+    margin: 0% 40% 0 0;
+    font-weight: 500;
+}
+.small-info p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: hsl(219, 29%, 14%); 
+    margin-top: 13px;
+    background-color: transparent; 
+    font-size: 13px; 
+    line-height: 20px;
+    opacity: 70%;
 }
 
 .small-grey {
     background-color: hsl(217, 19%, 35%);
     grid-area: small-grey;
+    border-radius: var(--border-radius);
+    padding: 8%;
+}
+.small-grey h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    margin-top: 11%;
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;   
+}
+.small-grey h2 {
+    float: right;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    background-color: transparent;
+    color: white;
+    margin: 0% 40% 0 0;
 }
 
-.long-white {
-    background-color: hsl(0, 0%, 100%);
-    grid-area: long-white;
+.quotation-img {
+    background-color: transparent; 
+    opacity: 28%;
+    position: absolute;
+    top: 0px; right: 150px;
 }
 
-.small-white {
-    background-color: hsl(0, 0%, 100%);
-    grid-area: small-white;
+@media (max-width: 800px) {
+    .testimonial {
+        margin: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1.5fr 1.5fr 2.5fr 3fr;
+        grid-template-areas:     
+        "wide-purple" 
+        "small-grey" 
+        "small-white"
+        "wide-black"
+        "long-white";
+        grid-gap: 1.5rem;
+    }
 }
-
-.wide-black {
-    background-color: hsl(219, 29%, 14%);
-    grid-area: wide-black;
-}
-
 
