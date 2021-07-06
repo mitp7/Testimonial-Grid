@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.testimonial {
+    display: grid;
+    padding: 9%;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  1fr 1fr;
+    grid-template-areas: 
+    "wide-purple wide-purple small-grey long-white"
+    "small-white wide-black wide-black long-white";
+    grid-gap: 20px;
+    border: 5px solid red;
+}
+
+.wide-purple {
+    background-color: hsl(263, 55%, 52%);
+    grid-area: wide-purple;
+}
+
+.small-grey {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: small-grey;
+}
+
+.long-white {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: long-white;
+}
+
+.small-white {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: small-white;
+}
+
+.wide-black {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: wide-black;
+}
+
+
