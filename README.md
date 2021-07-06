@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop-version](./images/desktop-preview.jpg)
-![Mobile-version](./images/mobile-design.jpg)
+![Desktop-version](./design/desktop-preview.jpg)
+![Mobile-version](./design/mobile-design.jpg)
 
 
 ### Links
