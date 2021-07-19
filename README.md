@@ -38,7 +38,7 @@ Users should be able to:
 
 ### What I learned
 
-From this challenge I learned more about CSS Grid and the various properties it has such as grid template columns, rows, and areas. Using these grid properties resulted in all of the components being very responsive further reducing the amount of time spend working with the media queries.
+From this challenge I learned more about CSS Grid and the various properties it has such as grid template columns, rows, and areas. Using these grid properties resulted in all of the components being very responsive further reducing the amount of time spent working with the media queries and adjusting the sizes for different sized screens.
 
 Sample of the CSS Grid code used for both desktop and mobile:
 
@@ -56,7 +56,7 @@ Sample of the CSS Grid code used for both desktop and mobile:
 }
 ```
 
-Mobile version has all the area components placed vertically: 
+Mobile version has all of the grid area components placed vertically as layed out on a mobile screen: 
 ```css
 @media (max-width: 800px) {
     .testimonial {
